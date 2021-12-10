@@ -1,0 +1,202 @@
+{
+  "flex-layout.col#right-col": {
+    "children": [
+      // "flex-layout.row#brand-and-rating",
+      "flex-layout.row#product-name",
+      "product-separator",
+      "flex-layout.row#product-identifier",
+      "flex-layout.row#product-priceWholesale",
+      "flex-layout.row#product-price",
+      "flex-layout.row#pack-price",
+      "sku-selector",
+      "product-quantity",
+      "product-availability",
+      "flex-layout.row#btn-container",
+      "product-separator",
+      "responsive-layout.mobile#description",
+      "responsive-layout.desktop#description"
+      // "flex-layout.col#add-to-cart-button",
+      // "flex-layout.col#add-to-list-btn"
+      // "condition-layout.product#sku-selector-or-list",
+      // "flex-layout.row#assembly-options"
+      // "flex-layout.row#link-seller"
+    ],
+    "props": {
+      "blockClass": "right-col",
+      "preventVerticalStretch": true,
+      "width": "45%"
+    }
+  },
+  "flex-layout.row#btn-container": {
+    "children": [
+      "add-to-cart-button",
+      "flex-layout.col#wishlistCont"
+    ]
+  },
+  "flex-layout.row#description": {
+    "children": [
+      "product-description#desktop"
+      // "product-images#gallery"
+    ],
+    "props": {
+      "blockClass": [
+        "description"
+      ],
+      "colSizing": "auto",
+      "colGap": 0,
+      "marginTop": 1,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "product-description#desktop": {
+    "props": {
+      "blockClass": "desktop",
+      "collapseContent": true
+    }
+  },
+  "flex-layout.col#wishlistCont": {
+    "props": {
+      "blockClass": "wishlistCont",
+      "unavailableText":"Notify me"
+    },
+    "children": [
+      "add-to-list-btn"
+    ]
+  },
+  "add-to-cart-button": {
+    "props": {
+      "blockClass": "wishtlistbtn",
+      "unavailableText":"Notify me"
+    }
+  },
+  "product-quantity": {
+    "props": {
+      // "warningQuantityThreshold": 9999999,
+      "showUnit": true,
+      "size": "small",
+      "selectorType": "dropdown",
+      "showLabel": false,
+      "marginTop": 0,
+      "blockClass": "quantityContainer"
+    }
+  },
+  "product-availability": {
+    "props": {
+      "threshold": "9",
+      "lowStockMessage": "Only {quantity} left!",
+      "highStockMessage": "Item in stock!"
+    }
+  },
+  "flex-layout.row#brand-and-rating": {
+    "children": [
+      "vtex.store-components:product-brand#brand-and-rating",
+      "flex-layout.col#spacer",
+      "product-rating-summary"
+    ],
+    "props": {
+      "blockClass": [
+        "items-center",
+        "brand-and-rating"
+      ],
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colSizing": "auto",
+      "colGap": 0
+    }
+  },
+  "vtex.store-components:product-brand#brand-and-rating": {
+    "props": {
+      "blockClass": "brand-and-rating",
+      "displayMode": "text",
+      "height": 0,
+      "logoWithLink": true
+    }
+  },
+  "flex-layout.row#product-name": {
+    "children": [
+      "vtex.store-components:product-name#product-page"
+    ],
+    "props": {
+      "blockClass": [
+        "product-name"
+      ],
+      "colGap": 8,
+      "rowGap": 9,
+      "marginBottom": 1
+    }
+  },
+  "flex-layout.row#pack-price": {
+    "children": [
+      "rich-text#packprice",
+      "product-selling-price"
+    ]
+  },
+  "rich-text#packprice": {
+    "props": {
+      "text": "PACK PRICE", 
+      "blockClass": "priceLabel"
+    }
+  },
+  "flex-layout.row#product-priceWholesale": {
+    "children": [
+      "rich-text#wholesale"
+      //   "product-selling-price#summary"
+    ]
+  },
+  "flex-layout.row#product-price": {
+    "children": [
+      "rich-text#rrp"
+      //  "product-list-price#summary"
+    ],
+    "props": {
+      // "blockClass": ["priceContainer"]
+    }
+  },
+  "rich-text#wholesale": {
+    "props": {
+      "text": "WHOLESALE PRICE PER UNIT",
+      "blockClass": "priceLabel"
+    }
+  },
+  "rich-text#rrp": {
+    "props": {
+      "text": "RRP PER UNIT",
+      "blockClass": "priceLabel"
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "markers": [
+        "highlight"
+      ],
+      "blockClass": "sellingpriceCont"
+      // "message": "{listPriceValue}"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "markers": [
+        "highlight"
+      ],
+      "blockClass": "sellingpriceCont"
+      // "message": "{sellingPriceValue}"
+    }
+  },
+  "vtex.store-components:product-name#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+  "flex-layout.row#product-identifier": {
+    "children": [
+      "product-identifier.product"
+    ],
+    "props": {
+      "blockClass": [
+        "product-identifier"
+      ]
+    }
+  }
+}

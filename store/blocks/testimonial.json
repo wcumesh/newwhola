@@ -1,0 +1,38 @@
+{
+    "slider-layout#testimonials": {
+      "children": [
+        "info-card#test1",
+        "info-card#test2"
+      ],
+      "props": {        
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "title" : "testimonials",
+        "blockClass": "testimonials" 
+      } 
+    },
+    "info-card#test1": {
+        "props": {
+          "imageUrl": "https://www.whola.com.au/media/home/welcome-page-hero-banner-image.png",
+          "isFullModeStyle": false,
+          "headline": "Say hello to the best fashion and lifestyle wholesale in Australia",
+          "textPosition": "center",
+          "fullWidth" : true,
+          "blockClass": "testimonials-inner"
+        }
+      },
+      "info-card#test2": {
+        "props": {
+          "imageUrl": "https://www.whola.com.au/media/home/welcome-page-hero-banner-image.png",
+          "isFullModeStyle": false,
+          "headline": "Find out why over 3,000 retailers buy wholesale for their store with Whola.",
+          "textPosition": "center",
+          "fullWidth" : true,
+          "blockClass": "testimonials-inner"
+        }
+      }
+
+}    

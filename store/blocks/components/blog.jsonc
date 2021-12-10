@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#blog": {
+    "children": ["flex-layout.col#blogSEO", "flex-layout.col#blogPosts"],
+    "props": {
+      "blockClass": "blog",
+      "colSizing": "auto",
+      "colGap": 8,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#blogSEO": {
+    "children": ["search-title.v2", "rich-text#blogSEO"],
+    "props": {
+      "blockClass": "blogSEO",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#blogSEO": {
+    "props": {
+      "text": "Want to have the latest styles in your stores? Our clothing category has all the latest trends you've been looking for. Everything from T-shirt dresses and jumpsuits to cool and statement pieces. Browse for an everyday wardrobe refresh, with trousers, shirts and versatile dresses on rotation.",
+      "blockClass": "blogSEO"
+    }
+  },
+
+  "flex-layout.col#blogPosts": {
+    "children": ["blog-category-preview.wordpress-category-preview"],
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "blog-category-preview.wordpress-category-preview": {
+    "props": {
+      "category": 11,
+      "numberOfPosts": 4,
+      "showDates": false,
+      "showExcerpts": true,
+      "absoluteLinks": true
+    }
+  },
+
+  "flex-layout.row#blogMobile": {
+    "children": ["flex-layout.col#blogColMobile"],
+    "props": {
+      "blockClass": "blog"
+    }
+  },
+
+  "flex-layout.col#blogColMobile": {
+    "children": [
+      "search-title.v2",
+      "rich-text#blogSEO",
+      "rich-text#blogSecondarySEO",
+      "blog-category-preview.wordpress-category-preview#mobile"
+    ]
+  },
+
+  "rich-text#blogSecondarySEO": {
+    "props": {
+      "text": "### Learn more about Computer & Software",
+      "blockClass": "blogSecondarySEO"
+    }
+  },
+
+  "blog-category-preview.wordpress-category-preview#mobile": {
+    "props": {
+      "category": 11,
+      "numberOfPosts": 3,
+      "showDates": false,
+      "showExcerpts": true,
+      "absoluteLinks": true
+    }
+  }
+}

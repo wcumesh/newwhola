@@ -1,0 +1,149 @@
+{
+  "drawer": {
+    "children": [
+      "flex-layout.row#menu-header"
+    ],
+    "props": {
+      "blockClass": "menuDrawer",
+      "maxWidth": 384
+    }
+  },
+  "flex-layout.row#menu-header": {
+    "props": {
+      "blockClass": "menuHeader"
+    },
+    "children": [
+      "flex-layout.col#menu-header"
+    ]
+  },
+  "flex-layout.col#menu-header": {
+    "children": [
+      "login#drawer",
+      // Deprecated
+      // "locale-switcher#drawer",
+      "rich-text#explore",
+      "menu#drawer",
+      "flex-layout.row#quickOrder",
+      "flex-layout.row#OrderQuote"
+    ],
+    "props": {
+      "blockClass": "drawerInnerCol"
+    }
+  },
+  // Deprecated
+  // "locale-switcher#drawer": {
+  //   "props": {
+  //     "blockClass": "locationDrawer"
+  //   }
+  // },
+  "link#reseller": {
+    "props": {
+      "label": "Seller Signup",
+      "href": "/registration",
+      "blockClass": "resellerLink"
+    }
+  },
+  "flex-layout.row#quickOrder": {
+    "children": [
+      "link#quickOrder"
+    ]
+  },
+  "flex-layout.row#OrderQuote": {
+    "children": [
+      "link#menu-order-quote"
+    ]
+  },
+  "link#quickOrder": {
+    "children": [
+      "rich-text#quickTitle",
+      "rich-text#quickText"
+    ],
+    "props": {
+      "blockClass": "quickLink",
+      "href": "/quickorder"
+    }
+  },
+  "rich-text#quickTitle": {
+    "props": {
+      "text": "## Quick Order",
+      "blockClass": "quickTitle"
+    }
+  },
+  "rich-text#quickText": {
+    "props": {
+      "text": "Shop products with a few clicks",
+      "blockClass": "quickText"
+    }
+  },
+  "link#menu-order-quote": {
+    "props": {
+      "label": "My Quotes",
+      "href": "/b2b-quotes",
+      "blockClass": "menu-order-quote"
+    }
+  },
+  "login#drawer": {
+    "props": {
+      "blockClass": "loginDrawer",
+      "iconLabel": "Sign in",
+      "logInButtonBehavior": "link"
+    }
+  },
+  "rich-text#explore": {
+    "props": {
+      "text": "## Explore",
+      "blockClass": "menuTitle"
+    }
+  },
+  "menu#drawer": {
+    "props": {
+      "blockClass": "menuDrawer"
+    },
+    "children": [
+      "menu-item#one",
+      "menu-item#two"
+    ]
+  },
+  "menu-item#one": {
+    "props": {
+      "id": "menu-item-apparel",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "departItem",
+      "iconPosition": "right",
+      "itemProps": {
+        "text": "Women's Apparel",
+        "categoryId": "9281",
+        "href": "/women-s-apparel"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  },
+  "menu-item#two": {
+    "props": {
+      "id": "menu-item-home",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "departItem",
+      "iconPosition": "right",
+      "itemProps": {
+        "text": "Home & Living",
+        "categoryId": "9282",
+        "href": "/home---living"
+      },
+      "iconProps": {
+        "id": "nav-thin-caret--right",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "active",
+        "mutedClassName": "menuItemIcon"
+      }
+    }
+  }
+}

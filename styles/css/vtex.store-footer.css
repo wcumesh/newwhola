@@ -1,0 +1,63 @@
+.footerLayout {
+  background: var(--b2b-blue-darkest);
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+.footerLayout--relative {
+  position: relative;
+}
+
+.footerLayout--z-999 {
+  z-index: 999;
+}
+
+.footerLayout--z-998 {
+  z-index: 998;
+}
+
+@media (max-width: 64rem) {
+  .footerLayout {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) {
+  background: #333333;
+}
+:global(.vtex-flex-layout-0-x-flexRow--footer-row-1) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-1) {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--copyrightContainer) {
+  flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-1) :global(.vtex-menu-2-x-menuContainerNav) {
+  width: 100%;
+  flex-direction: column;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-1) :global(.vtex-menu-2-x-menuContainer) {
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-1) :global(.vtex-menu-2-x-menuItem){
+  width: auto;
+  float: left;
+} 
+:global(.vtex-flex-layout-0-x-flexRowContent--footer-row-1) :global(.vtex-menu-2-x-styledLinkContent){
+  color: #fff; 
+  font-size: 18px;
+    font-weight: 400;
+}

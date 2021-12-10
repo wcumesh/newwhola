@@ -1,0 +1,46 @@
+{
+    "flex-layout.row#collections":{
+        "children": [
+          "info-card#1",
+          "info-card#2", 
+          "info-card#3"
+        ],
+        "props": {
+          "title" : "Collection Section", 
+          "blockClass": "collection_sec"  
+        }
+      }, 
+      "info-card#1": {
+        "props": {
+          "imageUrl": "https://www.whola.com.au/media/home/welcome-page-hero-banner-image.png",
+          "isFullModeStyle": true,
+          "headline": "Say hello to the best fashion and lifestyle wholesale in Australia",
+          "callToActionText": "Shop Now",
+          "textPosition": "left",
+          "fullWidth" : true,
+          "blockClass": "collection_inner" 
+        }
+      },   
+      "info-card#2": {
+        "props": {
+          "imageUrl": "https://www.whola.com.au/media/home/welcome-page-hero-banner-image.png",
+          "isFullModeStyle": true,
+          "headline": "Say hello to the best fashion and lifestyle wholesale in Australia",
+          "callToActionText": "Shop Now",
+          "textPosition": "left",
+          "fullWidth" : true,
+          "blockClass": "collection_inner"   
+        }
+      },   
+      "info-card#3": {
+        "props": {
+          "imageUrl": "https://www.whola.com.au/media/home/welcome-page-hero-banner-image.png",
+          "isFullModeStyle": true,
+          "headline": "Say hello to the best fashion and lifestyle wholesale in Australia",
+          "callToActionText": "Shop Now",
+          "textPosition": "left",
+          "fullWidth" : true,
+          "blockClass": "collection_inner"    
+        }   
+      }  
+}     
